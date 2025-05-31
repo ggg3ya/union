@@ -630,7 +630,7 @@ function mainTelegram() {
 
     if (data === 'add_wallet') {
       userState[chatId] = { step: 'add_wallet_input' };
-      bot.sendMessage(chatId, 'Harap masukkan detail dompet dengan format:\nnama: <nama_dompet>\nkunci_pribadi: <kunci_pribadi>\nalamat_xionn: <alamat_xion> (opsional)', {
+      bot.sendMessage(chatId, 'Harap masukkan detail dompet dengan format:\nnama: <nama_dompet>\nkunci_pribadi: <kunci_pribadi>\nalamat_xion: <alamat_xion> (opsional)', {
         reply_markup: {
           inline_keyboard: [backToHomeButton],
         },
